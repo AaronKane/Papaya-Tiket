@@ -1,0 +1,272 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	line-height:1.7;
+	color:#777;
+	overflow-x:hidden;
+	background: #F7F7F9;
+}
+a {
+
+font-size: 16px;
+color: #000;
+}
+
+nav>a,a:hover {
+	
+	text-decoration: none;
+	font-size: 14px;
+}
+img {max-width: 100%;}
+
+.logo{
+
+	width: 100%;
+	background: orange;
+    padding-bottom: 50px;
+}
+
+#papanav{ 
+
+	color: #ffffff;
+}
+
+.event{
+
+padding-top:px;
+
+}
+
+.box-area {
+  padding: 30px;
+  margin-bottom: 30px;
+ 
+  border-bottom: 1px solid #E2E2E2;
+  border-radius: 0 0 15px 15px;
+  border-top: 4px solid #F39C12;
+}
+
+.box-area-icon i {
+  font-size: 40px;
+  color: #F39C12;
+}
+
+.line{
+	margin-top: 25px;
+	border-bottom: 2px solid #FF9800;
+}
+
+.displayPE{
+
+display: block;
+background: orange;
+height: 300px;
+
+}
+
+.buttons {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 10px;
+}
+
+.list{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: orange;
+}
+
+.slider{
+	width: 100%;
+	height:250px;
+}
+
+.search{
+	display: block;
+background: orange;
+height: 300px;
+}
+
+#sponser{
+	width: 100px;
+	background: orange;
+	height: 100px;
+}
+
+#sponsership{
+ 	
+ 	width: 100%;
+ 	padding-top: 100px;
+ 	margin-left: 5px;
+
+}
+
+footer{
+	padding-top: 10px;
+	background: red;
+	height: 150px;
+}
+
+#dayevent .item{
+        background: orange;
+        height: 300px;
+        padding: 50px 0px;
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+}
+
+/***************************
+****************************
+This is the form start
+****************************
+***************************/
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+/***************************
+****************************
+This is the pop up start
+****************************
+***************************/
+
+#detail .detail-item
+{
+    right: 0;
+
+    margin: 0 0 15px;
+}
+
+#detail .detail-item .detail-link
+{
+    position: relative;
+
+    display: block;
+
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#detail .detail-item .detail-link .caption
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+
+#detail .detail-item .detail-link .caption:hover
+{
+    opacity: 1;
+}
+
+#detail .detail-item .detail-link .caption .caption-content
+{
+    font-size: 20px;
+
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+
+    text-align: center;
+}
+
+#detail .detail-item .detail-link .caption .caption-content i
+{
+    margin-top: -12px;
+}
+
+#detail .detail-item .detail-link .caption .caption-content h3,
+#detail .detail-item .detail-link .caption .caption-content h4
+{
+    margin: 0;
+}
+
+#detail *
+{
+    z-index: 2;
+}
