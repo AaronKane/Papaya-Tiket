@@ -1,125 +1,259 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	font-size:16px;
-	line-height:1.7;
-	color:#777;
-	overflow-x:hidden;
-	background: #F7F7F9;
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+    color: #777;
+    background: #f7f7f9;
 }
-a {
+a
+{
+    font-size: 16px;
 
-font-size: 16px;
-color: #000;
-}
-
-nav>a,a:hover {
-	
-	text-decoration: none;
-	font-size: 14px;
-}
-img {max-width: 100%;}
-
-.logo{
-
-	width: 100%;
-	background: orange;
-    padding-bottom: 50px;
+    color: #000;
 }
 
-#papanav{ 
+nav > a,
+a:hover
+{
+    font-size: 16px;
 
-	color: #ffffff;
+    text-decoration: none;
 }
 
-.event{
-
-padding-top:px;
-
+.navwrapper .container {
+  padding: 0;
+  width: auto;
 }
 
-.box-area {
-  padding: 30px;
-  margin-bottom: 30px;
- 
-  border-bottom: 1px solid #E2E2E2;
-  border-radius: 0 0 15px 15px;
-  border-top: 4px solid #F39C12;
+.navbar-wrapper {
+  margin-top: 0px;
+  height: 65px;
+  position: relative;
+  z-index: 15;
 }
 
-.box-area-icon i {
-  font-size: 40px;
-  color: #F39C12;
+.navbar-wrapper .container {
+  padding: 0px;
 }
 
-.line{
-	margin-top: 25px;
-	border-bottom: 2px solid #FF9800;
+.isFixed {
+  left: 0px;
+  width: 100%;
 }
 
-.displayPE{
-
-display: block;
-background: orange;
-height: 300px;
-
+.hideClass {
+  display: none;
 }
 
-.buttons {
-	text-align: center;
-	margin-bottom: 100px;
-	margin-top: 10px;
+.isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
+  background: #cc580c;
+  color: #fff;
 }
 
-.list{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+.isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
+  background: #cc580c;
+  color: #fff;
+}
+
+.isFixed .navbar.navbar-inverse.navbar-static-top a {
+  color: #fff;
+}
+
+.stuckMenu {
+  -o-transition: all .1s;
+  -ms-transition: all .1s;
+  -moz-transition: all .1s;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  background: #280A00;
+}
+
+.isFixed {
+  background: #280A00;
+  -o-transition: all .1s;
+  -ms-transition: all .1s;
+  -moz-transition: all .1s;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+} 
+
+    
+img
+{
+    max-width: 100%;
+}
+
+.logo
+{
+    width: 100%;
+    padding-bottom: 30px;
+
     background: orange;
 }
 
-.slider{
-	width: 100%;
-	height:250px;
+#papanav
+{
+    color: #fff;
 }
 
-.search{
-	display: block;
-background: orange;
-height: 300px;
+#event
+{
+    padding-top: 100px;
+    padding-left: 75px;
 }
 
-#sponser{
-	width: 100px;
-	background: orange;
-	height: 100px;
+#popularevent
+{
+    padding-left: 75px;
 }
 
-#sponsership{
- 	
- 	width: 100%;
- 	padding-top: 100px;
- 	margin-left: 5px;
-
+#famousevent
+{
+    padding-left: 75px;
 }
 
-footer{
-	padding-top: 10px;
-	background: red;
-	height: 150px;
+#eventsearch{
+    padding-left: 75px;
 }
 
-#dayevent .item{
-        background: orange;
-        height: 300px;
-        padding: 50px 0px;
-        margin: 5px;
-        color: #FFF;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        text-align: center;
+#get-ticket{
+     padding-left: 75px;
+}
+#footer{
+    width: 100%;
+    padding-left: 30px;
+    z-index: 1000;
 }
 
+.box-area
+{
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border-top: 4px solid #f39c12;
+    border-bottom: 1px solid #e2e2e2;
+    border-radius: 0 0 15px 15px;
+}
+
+.box-area-icon i
+{
+    font-size: 40px;
+
+    color: #f39c12;
+}
+
+.line
+{
+    margin-top: 25px;
+
+    border-bottom: 2px solid #ff9800;
+}
+
+.displayPE
+{
+    display: block;
+
+    height: 300px;
+
+    background: orange;
+}
+
+.buttons
+{
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    text-align: center;
+}
+
+.list
+{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+    background: orange;
+}
+
+.slider
+{
+    width: 100%;
+    height: 250px;
+}
+
+.search
+{
+    display: block;
+
+    height: 300px;
+
+    background: orange;
+}
+
+#sponser
+{
+    width: 100px;
+    height: 100px;
+
+    background: orange;
+}
+
+#sponsership
+{
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 100px;
+}
+
+footer
+{
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    background: red;
+}
+
+#dayevent .item
+{
+    height: 300px;
+    width: 100px;
+    margin: 15px;
+    margin-right: 15px;
+    padding: 20px 0;
+    border: solid #fff;
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: orange;
+}
+
+#sponsers .item
+{
+   
+    margin: 15px;
+    margin-right: 15px;
+    padding: 20px 0;
+    border: solid #fff;
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: orange;
+}
+
+
+#dayevent{
+    padding-right: 15px;
+}
 /***************************
 ****************************
 This is the form start
@@ -129,10 +263,11 @@ This is the form start
 .form-signin
 {
     max-width: 330px;
-    padding: 15px;
     margin: 0 auto;
+    padding: 15px;
 }
-.form-signin .form-signin-heading, .form-signin .checkbox
+.form-signin .form-signin-heading,
+.form-signin .checkbox
 {
     margin-bottom: 10px;
 }
@@ -142,55 +277,64 @@ This is the form start
 }
 .form-signin .form-control
 {
-    position: relative;
     font-size: 16px;
+
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     height: auto;
     padding: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .form-signin .form-control:focus
 {
     z-index: 2;
 }
-.form-signin input[type="text"]
+.form-signin input[type='text']
 {
     margin-bottom: -1px;
-    border-bottom-left-radius: 0;
+
     border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
-.form-signin input[type="password"]
+.form-signin input[type='password']
 {
     margin-bottom: 10px;
+
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 .account-wall
 {
     margin-top: 20px;
-    padding: 40px 0px 20px 0px;
+    padding: 40px 0 20px 0;
+
     background-color: #f7f7f7;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+       -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
 }
 .login-title
 {
-    color: #555;
     font-size: 18px;
     font-weight: 400;
+
     display: block;
+
+    color: #555;
 }
 .profile-img
 {
+    display: block;
+
     width: 96px;
     height: 96px;
     margin: 0 auto 10px;
-    display: block;
-    -moz-border-radius: 50%;
+
     -webkit-border-radius: 50%;
-    border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
 }
 .need-help
 {
@@ -199,6 +343,7 @@ This is the form start
 .new-account
 {
     display: block;
+
     margin-top: 10px;
 }
 
@@ -269,4 +414,27 @@ This is the pop up start
 #detail *
 {
     z-index: 2;
+}
+
+#PEtable{
+   padding-top: 5px;
+}
+
+.tables{
+    width: 800px;
+    padding-left: 50px;
+}
+
+
+.getticket{
+    height: 150px;
+    display: block;
+    background: #ff9800;
+}
+
+.e-result{
+    background: #fff;
+    padding: 50px;
+    widows: 250px;
+    height: 200px;
 }

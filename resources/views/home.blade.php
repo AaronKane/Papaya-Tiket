@@ -1,28 +1,15 @@
 @extends('master')
-@section('logo')
 
-    <div class="logo">
-    <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4" align="center">
-    <h2>Papaya Ticket</h2>
-    <a href=""><button class="btn btn-primary mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp">Sign In</button></a>
-    
-    <a href=""><button class="btn btn-success mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp">Sign Up</button></a>
-    </div>
-    <div class="col-md-4"></div>
-    </div>
-    </div>
-
-@endsection
 @section('content')
 
 {!! HTML::style('css/custom.css') !!}
 
-    <div class="container">
 
-    <section class="event">
-     <div class="row">
+
+  
+
+    <section id="event">
+     <div class="row container">
      <div class="mdl-grid">
             <div class="mdl-cell col-md-4 mdl-shadow--4dp">
               <div class="box-area" align="center">
@@ -63,20 +50,86 @@
 
       <section id="popularevent">
 
-      <div class="row">
+      <div class="row container">
       <div class="col-md-12">
 
       <h3 align="center">Popular Event</h3>
       
       <div class="displayPE mdl-shadow--4dp">
-      <h2 align="center">Display Items</h2>
-      <div class="mdl-cell col-md-12 list mdl-shadow--4dp" >
-      </div>
-      <div class="mdl-cell col-md-12 list mdl-shadow--4dp">
-      </div>
-      <div class="mdl-cell col-md-12 list mdl-shadow--4dp">
-      </div>
-      </div>
+      <h2 align="center">
+
+      </h2>
+      <div id="PEtable">
+        
+     
+      <table class="mdl-data-table mdl-js-data-table"  align="center">
+ 
+  <tbody >
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+   <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+      <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Dont e-ticket</td>
+      <td class="mdl-data-table__cell--non-numeric">May 21st</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric">Devcon Yangon Myanmar</td>
+       <td class="mdl-data-table__cell--non-numeric">2pm - 4pm</td>
+      <td></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">book</i></a></td>
+      <td class="mdl-data-table__cell--non-numeric"><a href=""><i class="material-icons">linkvariant</i></a></td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+</div>
+</div>
       <!--backend processes for popular event-->
       <div  class="col-md-2"></div>
       <div class="col-md-8 line"><div>
@@ -84,8 +137,10 @@
         
       </section>
 
+
+
   <section id="famousevent">
-  <div class="row">
+  <div class="row container">
   <div class="col-md-12">
   
   <h3 align="center">Famous Event</h3>
@@ -93,23 +148,76 @@
       <div id="demo">
         <div id="dayevent" class="owl-carousel mdl-shadow--4dp">
           <!--display for famous event-->
-          <div class="item"><h3>Mon</h3>
+          <div class="item"><h5>1Mon</h5>
           <p>24th December</p>
           <p>12:00-2:00</p>
-          <p>MICT Park</p></div>
-          <div class="item"><h1>2</h1></div>
-          <div class="item"><h1>3</h1></div>
-          <div class="item"><h1>4</h1></div>
-          <div class="item"><h1>5</h1></div>
-          <div class="item"><h1>6</h1></div>
-          <div class="item"><h1>7</h1></div>
-          <div class="item"><h1>8</h1></div>
-          <div class="item"><h1>9</h1></div>
-          <div class="item"><h1>10</h1></div>
-          <div class="item"><h1>11</h1></div>
-          <div class="item"><h1>12</h1></div>
-          <div class="item"><h1>13</h1></div>
-          <div class="item"><h1>14</h1></div>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>2Tue</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>3Wed</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>4Thu</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>5Fri</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>6Sat</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>7Sun</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+            <div class="item"><h5>1Mon</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>2Tue</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>3Wed</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>4Thu</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>5Fri</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>6Sat</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
+          <div class="item"><h5>7Sun</h5>
+          <p>24th December</p>
+          <p>12:00-2:00</p>
+          <p>MICT Park</p>
+          </div>
           <div class="item"><h1>15</h1></div>
           <div class="item"><h1>16</h1></div>
           <div class="item"><h1>17</h1></div>
@@ -167,25 +275,129 @@
     </script>
 
 
+
 </div>
+
 </div>
+
       <div  class="col-md-2"></div>
       <div class="col-md-8 line"><div>
       </section>
  
       <section id="eventsearch">
 
-      <div class="row">
+      <div class="row container">
       <div class="col-md-12">
 
       <h3 align="center">Event Search</h3>
       
-      <form action="" class="search mdl-shadow--4dp">
+    
+  <form action="" class="search mdl-shadow--4dp" align="">
         
 
-      <h3>Display Search Function</h3>
+      
+  <fieldset>
+  
+  <table class="tables">
+  
+  <tbody align="center">
+    <tr>
+     <td><label>Search by Category</label></td>
+      <td><select class="mdl-textfield__input">
+          <option value="">---Category</option>
+          <option value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="option5">option 5</option>
+        </select></td>
+     
+      <br></br>
+      <td></td>
+
+      <td><label>Search by Country</label></td>
+      <td><select class="mdl-textfield__input">
+          <option value="">---Country</option>
+          <option value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="option5">option 5</option>
+        </select></td>
+     </tr>
+
+    <tr><td></td></tr>
+
+    <tr><td><label>Event Dates</label></td></tr>
+
+    <tr>
+      <td><label>From</label></td>
+      <td><select class="mdl-textfield__input">
+          <option value="">---Date</option>
+          <option value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="option5">option 5</option>
+        </select></td>
+     
+      <br></br>
+      <td></td>
+      <td><label>To</label></td>
+      <td><select class="mdl-textfield__input">
+          <option value="">---Date</option>
+          <option value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="option5">option 5</option>
+        </select></td>
+    </tr>
+
+     <tr><td><label> </label></td></tr>
+
+    <tr>
+      <td><label>Event Type</label></td>
+      <td><select class="mdl-textfield__input">
+          <option value="">---Date</option>
+          <option value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="option5">option 5</option>
+        </select></td>
+         <td><label></label></td>
+         <td><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Search By Words</label>
+    </div></td>
+     
+    <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+    <i class="material-icons">search</i>
+    </button></td>
+    </tr>
+  
+  </tbody>
+</table>
+    
+    
+        
+  </fieldset>
+
 
       </form>
+
+  <div class="search mdl-shadow--4dp" align="">
+
+  <div class="e-result" align="center">
+    
+  
+  <h3>Result will show Here!</h3>
+
+  </div>
+
+  </div>
+
       </div>
       </div>
 
@@ -193,10 +405,56 @@
       <div class="col-md-8 line"><div>
       </section>
 
-</div>
 
+<section id="get-ticket">
+  <div class="row container">
+      <div class="col-md-12">
+
+      <h3 align="center">Get Tickets</h3>
+      
+    
+  <form action="" class="getticket mdl-shadow--4dp" align="">
+
+        <table class="tables" align="center">
+        <tbody>
+          <tr>
+            <td><label>Search Event</label></td>
+            <td></td>
+            <br></br>
+            <td><div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="username"/>
+    <label class="mdl-textfield__label" for="username">Text Event Name Here</label>
+  </div></td>
+           
+            <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">search</i>
+            </button></td>
+
+          </tr>
+        </tbody>
+      </table>
+</form>
+
+
+<div class="search mdl-shadow--4dp" align="">
+
+  <div class="e-result" align="center">
+    
+  
+  <h3>Result will show Here!</h3>
+
+  </div>
+  
+  </div>
+
+      </div>
+     </div>
+ <div  class="col-md-2"></div>
+      <div class="col-md-8 line"><div>
+</section>
 <section id="sponsership">
   
+
 
 <div class="row">
 <div class="col-md-12">
@@ -218,4 +476,5 @@
 </div>
 </div>
 </section>
+
 @endsection

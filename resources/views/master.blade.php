@@ -8,9 +8,11 @@
 
 
 		<!-- custom css -->
-		{!! HTML::style('css/style.css') !!}
+	{!! HTML::style('css/style.css') !!}
 
-    {!! HTML::script('js/owl.carousel.js') !!}
+  {!! HTML::script('js/owl.carousel.js') !!}
+
+  {!! HTML::script('js/menustick.js') !!}
 
   {!! HTML::script('mdl/material.min.js') !!}
 
@@ -21,11 +23,13 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
 		<!-- Material Design Light-->
-		{!! HTML::style('mdl/material.min.css') !!}
+	{!! HTML::style('mdl/material.min.css') !!}
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
          <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.orange-amber.min.css" />
 
@@ -34,15 +38,27 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	</head>
 	<body>
+<div class="wrapper">
+  
 
-<div>
-    @yield('logo')
-</div>
+ <div class="logo">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" align="center">
+    <h2>Papaya Ticket</h2>
+    <a href=""><button class="btn btn-primary mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp">Sign In</button></a>
+    
+    <a href=""><button class="btn btn-success mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp">Sign Up</button></a>
+    </div>
+    <div class="col-md-4"></div>
+    </div>
+    </div>
 
-    <div class="mdl-layout mdl-js-layout">
 
     
-  <header class="mdl-layout__header mdl-layout__header--fixed" id="navigation">
+<div class="menu">
+  <div class="mdl-layout mdl-js-layout navbar navbar-wrapper">
+  <header class="mdl-layout__header" id="navigation">
     <img class="mdl-layout-icon"></img>
     <div class="mdl-layout__header-row">
       <span class="mdl-layout-title"  id="papanav">Papaya Ticket</span>
@@ -70,16 +86,19 @@
          <a class="mdl-navigation__link"  href="contact.php">Contact</a>
      </nav>
   </div>
-
-  <main class="mdl-layout__content" id="content">
+</div>
+</div>
+  <main>
 
 
     <div>
 
 	 @yield('content')
+    
+    </div>
 
+<footer class="mdl-mini-footer">
 
-<footer class="mdl-mini-footer" id="navigation">
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo">
       Papaya Ticket
@@ -104,7 +123,7 @@
 
 </footer>
 
-    </div>
+    
 
     
 
@@ -126,6 +145,12 @@
 		<!-- Bootstrap JavaScript -->
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	
+	<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  $('.navbar-wrapper').stickUp();
+  });
+});
+</script>
 
 </html>
